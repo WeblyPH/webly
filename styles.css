@@ -74,15 +74,15 @@ a {
 }
 
 .brand-logo {
-  height: 40px;
-  width: 40px;
+  height: 56px;
+  width: auto;
   display: block;
 }
 
 .brand-text-block {
   display: flex;
   flex-direction: column;
-  line-height: 1.05;
+  line-height: 1.1;
 }
 
 .brand-text {
@@ -93,10 +93,12 @@ a {
 }
 
 .brand-subtext {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #ffdddd;
-  letter-spacing: 0.16em;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  margin-top: 0.1rem;
 }
 
 .hero-logo {
