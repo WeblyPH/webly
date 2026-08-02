@@ -40,10 +40,14 @@ a {
 
 .hero {
   position: relative;
-  min-height: 92vh;
-  padding: 2rem 0 3.5rem;
-  overflow: hidden;
+  min-height: 100vh;
+  padding: 3rem 0 4rem;
+  overflow: visible;
   background: #07123a;
+}
+
+.nav {
+  position: relative;
 }
 
 .hero::before {
