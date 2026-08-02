@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <circle cx="450" cy="450" r="450" fill="none"/>
+  <g transform="translate(120 160)" fill="#7a0000">
+    <path d="M140 30 L240 30 L420 600 L320 600 Z" opacity="0.95"/>
+    <path d="M260 30 L360 30 L540 600 L440 600 Z" opacity="0.95"/>
+    <path d="M620 30 L720 30 L540 420 Q520 460 480 420 L620 30 Z" opacity="0.95"/>
+  </g>
+</svg>
