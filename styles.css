@@ -43,15 +43,15 @@ a {
   min-height: 110vh;
   padding: 10rem 0 4rem;
   overflow: visible;
-  background: #07123a;
+  background: linear-gradient(180deg, #0f3a8c 0%, #3f6bbf 45%, #dfe8ff 100%);
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, rgba(122, 0, 0, 0.32), transparent 20%),
-    radial-gradient(circle at bottom left, rgba(7, 18, 58, 0.5), transparent 16%);
+  background: radial-gradient(circle at top right, rgba(122, 0, 0, 0.18), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(24, 63, 141, 0.25), transparent 16%);
   pointer-events: none;
 }
 
