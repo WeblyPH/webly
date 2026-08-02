@@ -79,14 +79,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   letter-spacing: -0.02em;
 }
 
 .brand-logo {
-  height: 96px;
+  height: 120px;
   width: auto;
   display: block;
 }
@@ -95,23 +95,29 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
 }
 
 .brand-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: white;
   letter-spacing: -0.02em;
 }
 
 .brand-subtext {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: #ffdddd;
   line-height: 1.2;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-top: 0.1rem;
+  margin-top: 0.15rem;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
 }
 
 .hero-logo {
