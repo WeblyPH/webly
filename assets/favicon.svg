@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
   <circle cx="450" cy="450" r="450" fill="#07123a" />
-  <g transform="translate(120,160)" fill="#7a0000">
-    <path d="M140 30 L240 30 L420 600 L320 600 Z" opacity="0.95"/>
-    <path d="M260 30 L360 30 L540 600 L440 600 Z" opacity="0.95"/>
-    <path d="M620 30 L720 30 L540 420 Q520 460 480 420 L620 30 Z" opacity="0.95"/>
+  <g transform="translate(214 230) scale(0.5)" fill="#7a0000" opacity="0.98">
+    <path d="M140 30 L240 30 L420 600 L320 600 Z"/>
+    <path d="M260 30 L360 30 L540 600 L440 600 Z"/>
+    <path d="M620 30 L720 30 L540 420 Q520 460 480 420 L620 30 Z"/>
   </g>
-  <text x="450" y="700" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="96" fill="#7a0000" text-anchor="middle">WEBLY</text>
 </svg>
