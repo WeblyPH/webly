@@ -301,11 +301,36 @@ h2 {
 
 .footer-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1.4rem 0 0;
   border-top: 1px solid var(--border);
+}
+
+.footer-copy {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.footer-copy a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .footer a.btn-primary {
