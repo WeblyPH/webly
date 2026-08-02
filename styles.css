@@ -62,9 +62,9 @@ a {
   right: 0;
   width: 100%;
   z-index: 20;
-  height: 130px;
+  height: 117px;
   background: #07123a;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
 .nav-inner {
