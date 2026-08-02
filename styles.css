@@ -63,7 +63,7 @@ a {
   width: 100%;
   z-index: 20;
   padding: 1.75rem 0;
-  height: 150px;
+  height: 170px;
   background: #07123a;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
@@ -79,14 +79,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.82rem;
   letter-spacing: -0.02em;
 }
 
 .brand-logo {
-  height: 130px;
+  height: 156px;
   width: auto;
   display: block;
 }
@@ -94,19 +94,20 @@ a {
 .brand-text-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   line-height: 1.1;
   margin-left: 0.85rem;
 }
 
 .brand-text {
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: white;
   letter-spacing: -0.02em;
 }
 
 .brand-subtext {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   color: #ffdddd;
   line-height: 1.2;
   letter-spacing: 0.16em;
@@ -117,7 +118,7 @@ a {
 .nav-links a {
   color: white;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 .hero-logo {
