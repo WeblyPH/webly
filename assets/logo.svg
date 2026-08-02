@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <rect width="100%" height="100%" fill="#07123a"/>
+  <g transform="translate(120,160)" fill="#7a0000">
+    <path d="M140 30 L240 30 L420 600 L320 600 Z" opacity="0.95"/>
+    <path d="M260 30 L360 30 L540 600 L440 600 Z" opacity="0.95"/>
+    <path d="M620 30 L720 30 L540 420 Q520 460 480 420 L620 30 Z" opacity="0.95"/>
+  </g>
+  <text x="450" y="700" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="96" fill="#7a0000" text-anchor="middle">WEBLY</text>
+  <text x="450" y="760" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="28" fill="#7a0000" text-anchor="middle">We Execute, Build, and Launch for You</text>
+</svg>
