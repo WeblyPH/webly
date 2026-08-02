@@ -40,8 +40,8 @@ a {
 
 .hero {
   position: relative;
-  min-height: 110vh;
-  padding: 9rem 0 4rem;
+  min-height: 115vh;
+  padding: 10rem 0 4rem;
   overflow: visible;
   background: #07123a;
 }
@@ -62,8 +62,8 @@ a {
   right: 0;
   width: 100%;
   z-index: 20;
-  padding: 1.5rem 0;
-  height: 120px;
+  padding: 1.75rem 0;
+  height: 150px;
   background: #07123a;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
@@ -79,14 +79,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: -0.02em;
 }
 
 .brand-logo {
-  height: 120px;
+  height: 130px;
   width: auto;
   display: block;
 }
@@ -95,29 +95,29 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
-  margin-left: 0.75rem;
+  margin-left: 0.85rem;
 }
 
 .brand-text {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: white;
   letter-spacing: -0.02em;
 }
 
 .brand-subtext {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #ffdddd;
   line-height: 1.2;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin-top: 0.15rem;
+  margin-top: 0.2rem;
 }
 
 .nav-links a {
   color: white;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .hero-logo {
