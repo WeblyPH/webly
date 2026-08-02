@@ -79,14 +79,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 1.45rem;
+  gap: 1.75rem;
   font-weight: 800;
-  font-size: 1.9rem;
+  font-size: 2.28rem;
   letter-spacing: -0.02em;
 }
 
 .brand-logo {
-  height: 136px;
+  height: 163px;
   width: auto;
   display: block;
 }
@@ -100,14 +100,14 @@ a {
 }
 
 .brand-text {
-  font-size: 1.82rem;
+  font-size: 2.18rem;
   font-weight: 800;
   color: white;
   letter-spacing: -0.02em;
 }
 
 .brand-subtext {
-  font-size: 0.74rem;
+  font-size: 0.89rem;
   color: #ffdddd;
   line-height: 1.2;
   letter-spacing: 0.16em;
