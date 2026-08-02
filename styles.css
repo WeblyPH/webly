@@ -335,8 +335,21 @@ h2 {
 }
 
 .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: #ffcccc;
   font-weight: 700;
+}
+
+.social-links svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: block;
+}
+
+.social-links a:hover {
+  color: white;
 }
 
 .footer a.btn-primary {
