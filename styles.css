@@ -74,7 +74,7 @@ a {
 }
 
 .brand-logo {
-  height: 56px;
+  height: 72px;
   width: auto;
   display: block;
 }
@@ -83,6 +83,7 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  margin-left: 0.5rem;
 }
 
 .brand-text {
