@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webly</title>
+    <title>Webly — We Execute, Build, and Launch for You</title>
     <meta name="description" content="Webly — modern, minimal websites that launch businesses." />
+    <meta name="theme-color" content="#07123a" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="assets/weblylogo.png?v=3" />
-    <link rel="shortcut icon" href="assets/weblylogo.png?v=3" />
+    <!-- Circular mark on a navy disc — the square logo lost its edges inside
+         the browser's rounded tab icon. -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=4" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-circle-512.png?v=4" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4" />
+    <link rel="shortcut icon" href="assets/favicon-32.png?v=4" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Progress bar for scroll position -->
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
     <header class="hero">
-      <nav class="nav">
+      <!-- Animated backdrop: drifting colour fields + a slow grid. Purely
+           decorative, and switched off under prefers-reduced-motion. -->
+      <div class="aurora" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <div class="grid-lines"></div>
+      </div>
+
+      <nav class="nav" id="nav">
         <div class="container nav-inner">
           <a class="brand" href="/">
             <img src="assets/bgremoved.png" alt="Webly W logo" class="brand-logo" />
@@ -27,112 +45,183 @@
             </div>
           </a>
           <div class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
+            <a class="nav-cta" href="#contact">Book a call</a>
+          </div>
         </div>
-      </div>
       </nav>
 
       <div class="container hero-content">
-        <div class="hero-copy animate-fade-up delay-1">
-          <h1>Websites that help your business stand out.</h1>
-          <p class="lead">
-            We design polished, high-converting landing pages that look sharp on every device.
+        <div class="hero-copy">
+          <p class="pill reveal" data-reveal>
+            <span class="pill-dot"></span> Available for new projects
           </p>
-          <div class="hero-actions animate-fade-up delay-2">
-            <a class="btn btn-primary" href="#contact">Book a call</a>
-            <a class="btn btn-secondary" href="#services">View services</a>
+          <h1 class="reveal" data-reveal data-delay="1">
+            Websites that help your business
+            <span class="grad-text">stand out.</span>
+          </h1>
+          <p class="lead reveal" data-reveal data-delay="2">
+            We design polished, high-converting landing pages that look sharp on every device —
+            built fast, launched properly.
+          </p>
+          <div class="hero-actions reveal" data-reveal data-delay="3">
+            <a class="btn btn-primary" href="#contact"><span>Book a call</span></a>
+            <a class="btn btn-secondary" href="#services"><span>View services</span></a>
           </div>
-          <ul class="hero-points animate-fade-up delay-3">
+          <ul class="hero-points reveal" data-reveal data-delay="4">
             <li>Fast, responsive builds</li>
             <li>Clear messaging and strong calls to action</li>
             <li>Simple launch and easy updates</li>
           </ul>
         </div>
 
-        <div class="hero-card animate-fade-up delay-4" aria-label="Highlights">
+        <div class="hero-card reveal" data-reveal data-delay="3" aria-label="Highlights">
+          <div class="card-glow" aria-hidden="true"></div>
           <div class="card-title">Why teams choose Webly</div>
           <div class="stat-grid">
             <div>
-              <strong>3x</strong>
+              <strong data-count="3" data-suffix="x">0x</strong>
               <span>Faster launch</span>
             </div>
             <div>
-              <strong>100%</strong>
+              <strong data-count="100" data-suffix="%">0%</strong>
               <span>Mobile-ready</span>
             </div>
             <div>
-              <strong>24/7</strong>
+              <strong class="no-count">24/7</strong>
               <span>Support</span>
             </div>
           </div>
         </div>
       </div>
+
+      <a class="scroll-cue" href="#services" aria-label="Scroll to services">
+        <span></span>
+      </a>
     </header>
+
+    <!-- Continuous ticker of what we build -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Websites</span><i>◆</i><span>Applications</span><i>◆</i><span>Laboratory Information Systems</span><i>◆</i>
+        <span>Kiosks</span><i>◆</i><span>Point of Sale</span><i>◆</i><span>Payroll Systems</span><i>◆</i>
+        <span>Websites</span><i>◆</i><span>Applications</span><i>◆</i><span>Laboratory Information Systems</span><i>◆</i>
+        <span>Kiosks</span><i>◆</i><span>Point of Sale</span><i>◆</i><span>Payroll Systems</span><i>◆</i>
+      </div>
+    </div>
 
     <main>
       <section id="services" class="section container">
-        <div class="section-heading">
+        <div class="section-heading reveal" data-reveal>
           <p class="eyebrow">Services</p>
           <h2>Everything you need for a strong online presence.</h2>
         </div>
 
         <div class="card-grid">
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+            </div>
             <h3>Website</h3>
             <p>Professional websites built for modern brands and businesses.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal data-delay="1">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+            </div>
             <h3>Application</h3>
             <p>Custom applications designed to streamline your workflows.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal data-delay="2">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3v6.5L4.5 18a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg>
+            </div>
             <h3>Laboratory Information System</h3>
             <p>Secure lab systems for accurate reporting and data management.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M9 21h6M12 17v4"/></svg>
+            </div>
             <h3>Kiosk</h3>
             <p>Interactive kiosk experiences for customers and visitors.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal data-delay="1">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M7 15h4"/></svg>
+            </div>
             <h3>POS</h3>
             <p>Point-of-sale solutions that keep retail and service sales moving.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card reveal" data-reveal data-delay="2">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v13H4z"/><path d="M8 10h8M8 14h5"/></svg>
+            </div>
             <h3>Payroll system</h3>
             <p>Automated payroll software for fast, accurate employee payments.</p>
           </article>
         </div>
       </section>
 
+      <section id="process" class="section section-dark">
+        <div class="container">
+          <div class="section-heading reveal" data-reveal>
+            <p class="eyebrow eyebrow-light">How it works</p>
+            <h2 class="h2-light">From first call to launch, without the guesswork.</h2>
+          </div>
+
+          <div class="steps">
+            <article class="step reveal" data-reveal>
+              <span class="step-no">01</span>
+              <h3>Discover</h3>
+              <p>We learn what you sell, who buys it, and what the site has to achieve.</p>
+            </article>
+            <article class="step reveal" data-reveal data-delay="1">
+              <span class="step-no">02</span>
+              <h3>Design &amp; build</h3>
+              <p>You see real screens early, then a working site — not a slide deck.</p>
+            </article>
+            <article class="step reveal" data-reveal data-delay="2">
+              <span class="step-no">03</span>
+              <h3>Launch</h3>
+              <p>We ship it, hand over the keys, and stay on for easy updates.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="about" class="section section-alt">
         <div class="container about-grid">
-          <div>
+          <div class="reveal" data-reveal>
             <p class="eyebrow">About</p>
             <h2>Built for founders who want clarity and momentum.</h2>
-            <p>
-              We create straightforward websites that help your audience understand your offer quickly and confidently.
+            <p class="about-copy">
+              We create straightforward websites that help your audience understand your offer
+              quickly and confidently.
             </p>
           </div>
-          <div class="quote-box">
-            “A beautiful website should feel effortless, modern, and easy to trust.”
+          <div class="quote-box reveal" data-reveal data-delay="1">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            A beautiful website should feel effortless, modern, and easy to trust.
           </div>
         </div>
       </section>
     </main>
 
-      <footer id="contact" class="footer">
+    <footer id="contact" class="footer">
+      <div class="footer-glow" aria-hidden="true"></div>
       <div class="container footer-content">
-        <div>
-          <p class="eyebrow">Let’s build something great</p>
-          <h2>Ready to launch your next website?</h2>
+        <div class="reveal" data-reveal>
+          <p class="eyebrow eyebrow-light">Let’s build something great</p>
+          <h2 class="h2-light">Ready to launch your next website?</h2>
           <p class="footer-copy">
             Email: <a href="mailto:sales@weblyph.com">sales@weblyph.com</a><br />
             Location: Makati City, Philippines
           </p>
           <div class="social-links">
-            <a href="https://www.instagram.com/weblyph?fbclid=IwY2xjawTb2HVleHRuA2FlbQIxMABicmlkETFwemJJdGk3UHhIMG1pWHpIc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHh6d5WGz9mdV_fWn6A5MdJvrhkC7qYaUb2acscVvwUM9psQ2t-Q71rvIxyPG_aem_a1CpOSARcXuOUMt9qbT6zQ" target="_blank" rel="noopener">
+            <a href="https://www.instagram.com/weblyph" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.055 1.97.24 2.428.403a4.92 4.92 0 0 1 1.675 1.09 4.92 4.92 0 0 1 1.09 1.675c.163.459.348 1.259.403 2.43.058 1.267.07 1.647.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.97-.403 2.428a4.92 4.92 0 0 1-1.09 1.675 4.92 4.92 0 0 1-1.675 1.09c-.458.163-1.259.348-2.43.403-1.267.058-1.647.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.97-.24-2.428-.403a4.92 4.92 0 0 1-1.675-1.09 4.92 4.92 0 0 1-1.09-1.675c-.163-.458-.348-1.259-.403-2.43C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.055-1.17.24-1.97.403-2.428a4.92 4.92 0 0 1 1.09-1.675 4.92 4.92 0 0 1 1.675-1.09C5.18 2.403 5.98 2.218 7.15 2.163 8.416 2.105 8.796 2.093 12 2.093zm0 1.838c-3.163 0-3.553.012-4.803.069-.92.043-1.416.2-1.747.334-.432.18-.74.397-1.067.724-.327.327-.544.635-.724 1.067-.135.331-.291.827-.334 1.747-.057 1.25-.069 1.64-.069 4.803s.012 3.553.069 4.803c.043.92.2 1.416.334 1.747.18.432.397.74.724 1.067.327.327.635.544 1.067.724.331.135.827.291 1.747.334 1.25.057 1.64.069 4.803.069s3.553-.012 4.803-.069c.92-.043 1.416-.2 1.747-.334.432-.18.74-.397 1.067-.724.327-.327.544-.635.724-1.067.135-.331.291-.827.334-1.747.057-1.25.069-1.64.069-4.803s-.012-3.553-.069-4.803c-.043-.92-.2-1.416-.334-1.747-.18-.432-.397-.74-.724-1.067-.327-.327-.635-.544-1.067-.724-.331-.135-.827-.291-1.747-.334-1.25-.057-1.64-.069-4.803-.069zm0 3.335a5.833 5.833 0 1 0 0 11.666 5.833 5.833 0 0 0 0-11.666zm0 1.838a3.995 3.995 0 1 1 0 7.99 3.995 3.995 0 0 1 0-7.99zm6.406-.698a1.36 1.36 0 1 0 0 2.72 1.36 1.36 0 0 0 0-2.72z"/></svg>
               @weblyph
             </a>
@@ -142,8 +231,11 @@
             </a>
           </div>
         </div>
-        <a class="btn btn-primary" href="mailto:sales@weblyph.com">Email us</a>
+        <a class="btn btn-primary reveal" data-reveal data-delay="1" href="mailto:sales@weblyph.com"><span>Email us</span></a>
       </div>
+      <p class="container footer-legal">© <span id="year">2026</span> Webly. Makati City, Philippines.</p>
     </footer>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
