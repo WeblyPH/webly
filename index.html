@@ -20,6 +20,13 @@
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=4" />
     <link rel="shortcut icon" href="assets/favicon-32.png?v=4" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Reveal-on-scroll starts elements at opacity 0, so it must only apply
+         when JS is actually running. Without this flag a failed/blocked app.js
+         leaves the whole page invisible — which is exactly what happened when
+         vercel.json's build list silently dropped app.js. -->
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
     <!-- Progress bar for scroll position -->
